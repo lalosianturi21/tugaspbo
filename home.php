@@ -17,8 +17,9 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- APP CSS -->
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/grid.css">
+    <script src="https://kit.fontawesome.com/a2331dbcf7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,24 +29,25 @@
         <div class="container">
             <div class="nav">
                 <a href="#" class="logo">
-                    <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                <i class="fa-solid fa-film bx-tada main-color text-warning"></i><span class="main-color text-warning"> T</span>io <span class="main-color text-warning">F</span>lix
                 </a>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#movie">Home</a></li>
                     <li><a href="#genre">Genre</a></li>
                     <li><a href="#">Movies</a></li>
-                    <li><a href="movie.html" onclick="login()">Beli tiket</a></li>
+                    <li><a href="./daftarfilm/index.php">Daftar nama film</a></li>
+                    <li><a href="login.php" onclick="login()">Beli tiket</a></li>
                     <li><a href="#">Series</a></li>
                     <li><a href="#">About</a></li>
                     <li>
-                        <a href="#" class="btn btn-hover">
+                        <a href="login.php" class="btn btn-hover">
                             <span>Sign in</span>
                         </a>
                     </li>
                 </ul>
                 <!-- MOBILE MENU TOGGLE -->
                 <div class="hamburger-menu" id="hamburger-menu">
-                    <div class="hamburger"></div>
+                    <div class="hamburger "></div>
                 </div>
             </div>
         </div>
@@ -59,7 +61,7 @@
             <div class="owl-carousel carousel-nav-center" id="hero-carousel">
                 <!-- SLIDE ITEM -->
                 <div class="hero-slide-item">
-                    <img src="/black-banner.png" alt="">
+                    <img src="./images/black-banner.png" alt="">
                     <div class="overlay"></div>
                     <div class="hero-slide-item-content">
                         <div class="item-content-wraper">
@@ -348,14 +350,15 @@
             </div>
             <div class="movies-slide carousel-nav-center owl-carousel">
                 <!-- MOVIE ITEM -->
-                <a href="movie.html" class="movie-item">
-                    <img src="./images/movies/theatre-dead.jpg" alt="">
-                    <div class="movie-item-content">
+                <a href="#" class="movie-item">
+                <img src="./images/anime/secret world.jpg" alt="">
+                    <div class="movie-item-content text-center">
                         <div class="movie-item-title">
-                            Theatre of the dead
+                            The secret world
                         </div>
-                        <input class="btn btn-primary float-end" type="button" value="Input">
-                        <div class="movie-infos">
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
                             <div class="movie-info">
                                 <i class="bx bxs-star"></i>
                                 <span>9.5</span>
@@ -376,12 +379,14 @@
                 <!-- END MOVIE ITEM -->
                 <!-- MOVIE ITEM -->
                 <a href="#" class="movie-item">
-                    <img src="./images/movies/transformer.jpg" alt="">
+                <img src="./images/anime/akame ga kill.png" alt="">
                     <div class="movie-item-content">
-                        <div class="movie-item-title">
-                            Transformer
+                        <div class="movie-item-title text-center">
+                            Akame ga kill
                         </div>
-                        <div class="movie-infos">
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
                             <div class="movie-info">
                                 <i class="bx bxs-star"></i>
                                 <span>9.5</span>
@@ -402,12 +407,15 @@
                 <!-- END MOVIE ITEM -->
                 <!-- MOVIE ITEM -->
                 <a href="#" class="movie-item">
-                    <img src="./images/movies/resident-evil.jpg" alt="">
+                    <img src="./images/anime/kimi no nawa.jpg" alt="">
                     <div class="movie-item-content">
-                        <div class="movie-item-title">
-                            Resident Evil
+                        <div class="movie-item-title text-center">
+                            Kimi no nawa
                         </div>
-                        <div class="movie-infos">
+
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                        <br>
+                        <div class="movie-infos d-flex justify-content-center">
                             <div class="movie-info">
                                 <i class="bx bxs-star"></i>
                                 <span>9.5</span>
@@ -428,12 +436,14 @@
                 <!-- END MOVIE ITEM -->
                 <!-- MOVIE ITEM -->
                 <a href="#" class="movie-item">
-                    <img src="./images/movies/captain-marvel.png" alt="">
+                    <img src="./images/anime/classroomoftheelite.jpg" alt="">
                     <div class="movie-item-content">
-                        <div class="movie-item-title">
-                            Captain Marvel
+                        <div class="movie-item-title text-center">
+                            Classroom of the elite
                         </div>
-                        <div class="movie-infos">
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
                             <div class="movie-info">
                                 <i class="bx bxs-star"></i>
                                 <span>9.5</span>
@@ -454,12 +464,14 @@
                 <!-- END MOVIE ITEM -->
                 <!-- MOVIE ITEM -->
                 <a href="#" class="movie-item">
-                    <img src="./images/movies/hunter-killer.jpg" alt="">
+                    <img src="./images/anime/one piece.jpg" alt="">
                     <div class="movie-item-content">
-                        <div class="movie-item-title">
-                            Hunter Killer
+                        <div class="movie-item-title text-center">
+                            One piece
                         </div>
-                        <div class="movie-infos">
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
                             <div class="movie-info">
                                 <i class="bx bxs-star"></i>
                                 <span>9.5</span>
@@ -480,12 +492,14 @@
                 <!-- END MOVIE ITEM -->
                 <!-- MOVIE ITEM -->
                 <a href="#" class="movie-item">
-                    <img src="./images/movies/blood-shot.jpg" alt="">
+                    <img src="./images/anime/tokyo ghoul.jpg" alt="">
                     <div class="movie-item-content">
-                        <div class="movie-item-title">
-                            Bloodshot
+                        <div class="movie-item-title text-center">
+                            Tokyo ghoul
                         </div>
-                        <div class="movie-infos">
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
                             <div class="movie-info">
                                 <i class="bx bxs-star"></i>
                                 <span>9.5</span>
@@ -504,14 +518,16 @@
                     </div>
                 </a>
                 <!-- END MOVIE ITEM -->
-                <!-- MOVIE ITEM -->
+                <!-- MOVIE ITEM --> 
                 <a href="#" class="movie-item">
-                    <img src="./images/movies/call.jpg" alt="">
+                    <img src="./images/anime/haikyu.jpg" alt="">
                     <div class="movie-item-content">
-                        <div class="movie-item-title">
-                            Call
+                        <div class="movie-item-title text-center">
+                            Haikyu
                         </div>
-                        <div class="movie-infos">
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
                             <div class="movie-info">
                                 <i class="bx bxs-star"></i>
                                 <span>9.5</span>
@@ -534,15 +550,841 @@
         </div>
     </div>
     
+    <br>
+    <div class="container">
+            <div class="section-header">
+                Cartoons
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/cartoons/coco.jpg" alt="">
+                    <div class="movie-item-content text-center">
+                        <div class="movie-item-title">
+                            Coco
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/cartoons/croods.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Croods
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/cartoons/beautyandthebeast.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Beauty and the beast
+                        </div>
+
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                        <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/cartoons/dragon.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Dragon ball
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/cartoons/over-the-moon.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Over the moon
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/cartoons/the lion king.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            The lion king
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/cartoons/aladdin.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Aladdin
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
     <!-- END LATEST MOVIES SECTION -->
+
+    <br>
+    <div class="container">
+            <div class="section-header">
+                Action
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/action/dracula.jpg" alt="">
+                    <div class="movie-item-content text-center">
+                        <div class="movie-item-title">
+                            Dracula
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/action/inception.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Inception
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/action/ironman.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Iron man
+                        </div>
+
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                        <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/action/thegray.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            The gray
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/action/theraid.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            The raid
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/action/terminator2.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Terminator 2
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/action/johnwick2.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            John wick 2
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <div class="container">
+            <div class="section-header">
+                Romantic
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/romantic/astarisborn.jpg" alt="">
+                    <div class="movie-item-content text-center">
+                        <div class="movie-item-title">
+                            Astaris born
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/romantic/ifistay.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            If i stay
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/romantic/mebeforeyou.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Me before you
+                        </div>
+
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                        <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/romantic/midnightsun.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Midnight sun
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/romantic/redeeminglove.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Redeeming love
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/romantic/theinbetween.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            The in between
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/romantic/throughmywindow.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Through my window
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+            <div class="section-header">
+                Comedy
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/comedy/21 jump street.jpg" alt="">
+                    <div class="movie-item-content text-center">
+                        <div class="movie-item-title">
+                            Coco
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                <img src="./images/comedy/extreme job.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Croods
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/comedy/free guy.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Beauty and the beast
+                        </div>
+
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                        <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/comedy/ghostbusters.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Dragon ball
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/comedy/hangover.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Over the moon
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/comedy/pee mak.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            The lion king
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/comedy/the king's man.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title text-center">
+                            Aladdin
+                        </div>
+                        <button class="btn btn-danger mx-auto d-block shadow">Watch Now &nbsp <i class="fa-solid fa-play"></i></button>
+                    <br>
+                        <div class="movie-infos d-flex justify-content-center">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    <!-- END LATEST MOVIES SECTION -->
+    
 
     <!-- LATEST SERIES SECTION -->
     <div class="section">
-        <h1 class="text-center"><b>Film Movie</b></h1>
+        <h1 class="text-center"><b>Movies</b></h1>
         <div class="container">
-            <div class="section-header">
-                latest series
-            </div>
             <div class="movies-slide carousel-nav-center owl-carousel">
                 <!-- MOVIE ITEM -->
                 <a href="#" class="movie-item">
@@ -1137,10 +1979,6 @@
     <!-- END FOOTER SECTION -->
 
     <!-- COPYRIGHT SECTION -->
-    <div class="copyright">
-        Copyright 2021 <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">
-            Tuat Tran Anh</a>
-    </div>
     <!-- END COPYRIGHT SECTION -->
 
     <!-- SCRIPT -->
@@ -1150,8 +1988,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <!-- APP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <script src="login.js"></script>
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/login.js"></script>
 </body>
 
 </html>

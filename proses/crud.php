@@ -89,7 +89,7 @@
             session_start();
             $_SESSION['ADMIN'] = $result;
             // status yang diberikan 
-            echo "<script>window.location='../index.html';</script>";
+            echo "<script>window.location='../daftarfilm/index.php';</script>";
         }
     }
 ?>
